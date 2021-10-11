@@ -1,13 +1,39 @@
 Body {
     color: #05F4B7;
     background-color: #545C66;
+    box-shadow: inset 0px 1100px 180px -190px #FF0D35;
 }
 
 .nav-nav {
     color: #05F4B7;
 }
 
+.fixed {
+    position:fixed !important;
+    z-index: 100;
+}
+h3 {
+    border: 20px;
+}
 
+.horizonBarContain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+}
+.horizonBar {
+    background-color:#05F4B7 ;
+    display:flex;
+    height: 10px;
+    width: 80vw;
+    
+    box-shadow: 0px 0px 10px 10px #05F4B7;
+    
+}
 
 .card {
     background-color: #353A40;
@@ -47,6 +73,18 @@ Body {
     border:10px solid;
     border-color: transparent;
 }
+
+
+.rainbowColor {
+    position:relative;
+    clip-path: inset(0px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+}
+.mayHideMe {
+    background-color: transparent;
+}
+
 
 
 
