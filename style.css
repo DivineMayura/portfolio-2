@@ -11,6 +11,8 @@ Body {
 
 .card {
     background-color: #353A40;
+    max-width: 700px;
+    min-width: 354px;
 }
 
 #mainPicture figure p {
