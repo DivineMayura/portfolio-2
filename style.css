@@ -1,0 +1,107 @@
+Body {
+    color: #05F4B7;
+    background-color: #545C66;
+}
+
+.nav-nav {
+    color: #05F4B7;
+}
+
+
+
+.card {
+    background-color: #353A40;
+}
+
+#mainPicture figure p {
+    text-align: center;
+}
+
+.smallImages {
+    /* width: 250px; */
+    height: 200px;
+    width: contain;
+    max-width: 250px;
+}
+.smallImagesWide {
+    /* width: 340px; */
+    height: 200px;
+    width: contain;
+    max-width: 340px;
+}
+.mayAlignMe {
+    margin: 0 auto;
+}
+.mayRoundCorners {
+    border-radius: 20px;
+}
+.may10pxBottomCorners {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.rainbowBorder {
+    /* pre setting border so on hover it doesn't move page content */
+    border:10px solid;
+    border-color: transparent;
+}
+
+
+
+
+/* I can't use this on images, because it also alters the color of it, as well as the text. */
+.rainbowBorder:hover {
+    /* on hover the transparent border becomes apparent */
+    position:relative;
+
+    /* Commented stuff out durring development... */
+
+    /* border: 10px solid; */
+    /* this manipulates the border image to be a gradient */
+    /* border-image: linear-gradient(45deg, gold, deeppink) 1; */
+    /* clip-path cuts the image so that only the cliped inside is shown and not the outside -this gives it the round edges*/
+    /* inset defines an inset rectangle*/
+    clip-path: inset(0px round 10px);
+    /* huerotate make the hue rotate and change around the border for 6 seconds, in an infinite loop, linearly */
+    animation: huerotate 6s infinite linear;
+    /* this applies the hue rotation to the  */
+    filter: hue-rotate(360deg);
+
+    /* added this so there's a little glow inside the box, barely noticeable */
+    /* box-shadow:inset 0px 0px 90px 1px #004D39; */
+}
+
+.card:hover {
+    position: relative;
+    right:3px;
+    top:3px;
+    /* transform:rotate(-1deg); */
+    box-shadow:3px -3px 5px 3px #EF0D50;
+    animation:rotate .5s;
+}
+/* .rainbowBorderBig:hover {
+
+} */
+.card-body a {
+    color:#FF9DA4;
+}
+
+
+footer {
+    background-color: #747F8C;
+}
+
+/* animates the rotation of the filter */
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform:rotate(-1deg);
+    }
+    /* 100% {
+        transform:rotate(1deg);
+    } */
+}
