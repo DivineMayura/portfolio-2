@@ -31,7 +31,7 @@ function watch() {
     var clock = setInterval(function () {
 
         i += 3;
-        var timer = " 0px 0px " + i + "px " + i + "px #0dffb6";
+        var timer = " 0px 0px " + i + "px " + i + "px #000000";
         document.getElementById("landingButton").style.boxShadow = timer;
 
         if (i >= 900) {
