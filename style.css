@@ -8,6 +8,14 @@ Body {
     color: #05F4B7;
 }
 
+figure {
+    background-color: #353A40;
+    padding:10px;
+    text-align: center;
+}
+figure img {
+    border-bottom: 5px;
+}
 .fixed {
     position:fixed !important;
     z-index: 100;
@@ -25,6 +33,7 @@ h3 {
     align-content: center;
     padding: 40px;
 }
+
 .horizonBar {
     background-color:#05F4B7 ;
     display:flex;
@@ -85,9 +94,50 @@ h3 {
     background-color: transparent;
 }
 
+.getMyStuff {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    height:450px;
+}
+.getMyStuff button {
+    font-size:xx-large;
+}
 
+.mayStuffContainer {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#stuffContainerContainer {
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
 
+.getMyStuff:hover button {
+        position: relative;
+        right:3px;
+        top:3px;
+        /* transform:rotate(-1deg); */
+        box-shadow:3px -3px 5px 3px #05F4B7;
+        /* animation-direction: alternate; */
+        animation-name:rotate;
+        animation-duration: 0.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+}
 
+.selected:hover {
+    box-shadow:3px -3px 5px 3px #EF0D50 !important;
+}
+.selected:focus {
+    animation-play-state: paused !important;
+}
 
 /* I can't use this on images, because it also alters the color of it, as well as the text. */
 .rainbowBorder:hover {
@@ -101,7 +151,7 @@ h3 {
     /* border-image: linear-gradient(45deg, gold, deeppink) 1; */
     /* clip-path cuts the image so that only the cliped inside is shown and not the outside -this gives it the round edges*/
     /* inset defines an inset rectangle*/
-    clip-path: inset(0px round 10px);
+    /* clip-path: inset(0px round 10px); */
     /* huerotate make the hue rotate and change around the border for 6 seconds, in an infinite loop, linearly */
     animation: huerotate 6s infinite linear;
     /* this applies the hue rotation to the  */
