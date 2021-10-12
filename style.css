@@ -53,7 +53,7 @@ Body {
     flex-direction: column;
     flex-wrap: wrap;
     box-shadow:inset 0px 0px 100px 0px #0dffb6;
-
+    color:#FF0D35;
 
     animation-name: shadowPulse;
     animation-direction:alternate-reverse;
@@ -69,6 +69,7 @@ Body {
 }
 
 #landingBackground:hover{
+    color:#05F4B7;
     animation-name: shadowPulseAlt;
     animation-direction:alternate-reverse;
     animation-duration: 1000ms;
