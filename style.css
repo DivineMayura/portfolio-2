@@ -44,7 +44,7 @@ Body {
     width: 100%;
     max-width: 800px;
     max-height: 600px;
-    border-radius: 50px;
+    border-radius: 30%;
     padding: 200px;
     display:flex;
     justify-content: space-evenly;
@@ -52,13 +52,14 @@ Body {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    /* box-shadow: 0px 0px 200px 0px #FF0D35; */
+    box-shadow:inset 0px 0px 100px 0px #0dffb6;
 
 
     animation-name: shadowPulse;
     animation-direction:alternate-reverse;
-    animation-duration: 1s;
+    animation-duration: 1000ms;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
 }
 
 #landingButton button{
@@ -67,15 +68,31 @@ Body {
     
 }
 
+#landingBackground:hover{
+    animation-name: shadowPulseAlt;
+    animation-direction:alternate-reverse;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
 
 @keyframes shadowPulse{
-    0% {box-shadow: 0px 0px 10px 0px #FF0D35;
+    100%    {box-shadow:  0px 0px 200px 50px #FF0D35, inset  0px 0px 70px 20px #FF0D35;
     }
-    100% {box-shadow: 0px 0px 200px 0px #FF0D35;
+    /* 50% {box-shadow: 0px 0px 200px #FF0D35, inset 0px 0px 50px #0dffb6;
+    } */
+    0%      {box-shadow: 0px 0px 100px 50px #FF0D35, inset 0px 0px 100px 20px #FF0D35;
     }
 }
 
-
+@keyframes shadowPulseAlt{
+    100%    {box-shadow:  0px 0px 200px 50px #05F4B7, inset  0px 0px 70px 20px #05F4B7;
+    }
+    /* 50% {box-shadow: 0px 0px 200px #FF0D35, inset 0px 0px 50px #0dffb6;
+    } */
+    0%      {box-shadow: 0px 0px 100px 50px #05F4B7, inset 0px 0px 100px 20px #05F4B7;
+    }
+}
 
 
 
