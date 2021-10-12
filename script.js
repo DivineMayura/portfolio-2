@@ -31,11 +31,11 @@ function watch() {
     var i = 0;
     var clock = setInterval(function () {
 
-        i += 5;
+        i += 10;
         var timer = " 0px 0px " + i + "px " + i + "px #000000";
         document.getElementById("landingButton").style.boxShadow = timer;
 
-        if (i >= 900) {
+        if (i >= 1500) {
 
             blackTransition()
 
@@ -51,14 +51,14 @@ function watch() {
 
 // this is for the navbar retreating shadow effect
 function blackTransition() {
-    var z = 1400;
+    var z = 1500;
     var blackVanish = setInterval(function () {
 
-        z -= 5;
+        z -= 10;
         var transition = "0px 0px " + z + "px " + z + "px #000000";
         blackNav.style.boxShadow = transition;
 
-        if (z <= 4) {
+        if (z <= 11) {
             clearInterval(blackVanish);
         }
 
