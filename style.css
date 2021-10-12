@@ -15,6 +15,7 @@ figure {
 }
 figure img {
     border-bottom: 5px;
+    width: 500px;
 }
 .fixed {
     position:fixed !important;
@@ -131,7 +132,12 @@ h3 {
         animation-direction: alternate;
         animation-iteration-count: infinite;
 }
-
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
 .selected:hover {
     box-shadow:3px -3px 5px 3px #EF0D50 !important;
 }
