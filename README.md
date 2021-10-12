@@ -11,6 +11,7 @@ My Second Portfolio, now using the skills learned previously, and some javascrip
 
 * [FontAwesome](https://fontawesome.com/)
 * [Bootstrap](https://getbootstrap.com/)
+* [Google Fonts](https://fonts.google.com/)
 
 ## Deployed Link
 
