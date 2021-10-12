@@ -31,11 +31,11 @@ function watch() {
     var i = 0;
     var clock = setInterval(function () {
 
-        i += 3;
+        i += 5;
         var timer = " 0px 0px " + i + "px " + i + "px #000000";
         document.getElementById("landingButton").style.boxShadow = timer;
 
-        if (i >= 990) {
+        if (i >= 900) {
 
             blackTransition() 
 
@@ -52,7 +52,7 @@ function blackTransition() {
     var z = 1400;
     var blackVanish = setInterval(function () {
 
-        z -=4;
+        z -=5;
         var transition = "0px 0px " + z + "px " + z + "px #000000";
         blackNav.style.boxShadow = transition;
 
