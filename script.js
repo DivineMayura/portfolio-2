@@ -1,5 +1,10 @@
 const eButt = document.getElementById("emailButton");
 const cButt = document.getElementById("callButton");
+const lButt = document.getElementById("actualLandingButton");
+
+const everything =document.getElementById("everything");
+const landingContainer = document.getElementById("landingContainer");
+
 const getLinks = document.getElementById("getLinks");
 const emailLink = document.getElementById("emailLink").children[0]
 const callLink = document.getElementById("callLink").children[0]
@@ -15,6 +20,11 @@ function phone() {
 
     callLink.setAttribute("href", "tel:7076724018");
 }
+function enter() {
+    everything.setAttribute("style", "display:block");
+    landingContainer.setAttribute("style", "display:none");
 
+}
 eButt.addEventListener("click", email);
 cButt.addEventListener("click", phone);
+lButt.addEventListener("click", enter)

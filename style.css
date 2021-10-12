@@ -3,6 +3,98 @@ Body {
     background-color: #262626;
     box-shadow:inset 0 500px 400px rgb(211, 211, 211),inset 0 -500px 400px rgb(216, 216, 216);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#landingContainer {
+    height:100vh;
+    width: 100vw;
+
+    background-color: #262626;
+    /* background-color: goldenrod; */
+
+    box-shadow: inset 0px 600px 1200px -400px rgb(211, 211, 211);
+
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    /* padding: 500px; */
+}
+
+#landingBackground {
+    background-color: #353A40;
+    height:100%;
+    width: 100%;
+    max-width: 800px;
+    max-height: 600px;
+    border-radius: 50px;
+    padding: 200px;
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* box-shadow: 0px 0px 200px 0px #FF0D35; */
+
+
+    animation-name: shadowPulse;
+    animation-direction:alternate-reverse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#landingButton button{
+    width:20rem;
+    height:4rem;
+    
+}
+
+
+@keyframes shadowPulse{
+    0% {box-shadow: 0px 0px 10px 0px #FF0D35;
+    }
+    100% {box-shadow: 0px 0px 200px 0px #FF0D35;
+    }
+}
+
+
+
+
+
+
+
+
+
+#everything {
+    display:none
+
+
+}
+
+
+
+
+
+
+
 .nav-nav {
     color: #05F4B7;
 }
@@ -164,4 +256,13 @@ footer {
     0% {
         transform:rotate(1deg);
     }
+}
+
+@media only screen and (max-width: 1000px) {
+    #landingBackground {
+        width: 80vw;
+        height: 70vh;
+        flex-direction: row;
+    }
+
 }
