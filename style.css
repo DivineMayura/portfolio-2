@@ -3,11 +3,9 @@ Body {
     background-color: #545C66;
     box-shadow: inset 0px 1100px 180px -190px #FF0D35;
 }
-
 .nav-nav {
     color: #05F4B7;
 }
-
 figure {
     background-color: #353A40;
     padding:10px;
@@ -24,7 +22,6 @@ figure img {
 h3 {
     border: 20px;
 }
-
 .horizonBarContain {
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +31,6 @@ h3 {
     align-content: center;
     padding: 40px;
 }
-
 .horizonBar {
     background-color:#05F4B7 ;
     display:flex;
@@ -44,25 +40,20 @@ h3 {
     box-shadow: 0px 0px 10px 10px #05F4B7;
     
 }
-
 .card {
     background-color: #353A40;
     max-width: 700px;
     min-width: 354px;
 }
-
 #mainPicture figure p {
     text-align: center;
 }
-
 .smallImages {
-    /* width: 250px; */
     height: 200px;
     width: contain;
     max-width: 250px;
 }
 .smallImagesWide {
-    /* width: 340px; */
     height: 200px;
     width: contain;
     max-width: 340px;
@@ -77,14 +68,10 @@ h3 {
     border-bottom-left-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
 }
-
 .rainbowBorder {
-    /* pre setting border so on hover it doesn't move page content */
     border:10px solid;
     border-color: transparent;
 }
-
-
 .rainbowColor {
     position:relative;
     clip-path: inset(0px round 10px);
@@ -94,7 +81,6 @@ h3 {
 .mayHideMe {
     background-color: transparent;
 }
-
 .getMyStuff {
     display: flex;
     flex-direction: column;
@@ -106,7 +92,6 @@ h3 {
 .getMyStuff button {
     font-size:xx-large;
 }
-
 .mayStuffContainer {
     width: fit-content;
     display: flex;
@@ -119,14 +104,11 @@ h3 {
     align-content: center;
     flex-wrap: wrap;
 }
-
 .getMyStuff:hover button {
         position: relative;
         right:3px;
         top:3px;
-        /* transform:rotate(-1deg); */
         box-shadow:3px -3px 5px 3px #05F4B7;
-        /* animation-direction: alternate; */
         animation-name:rotate;
         animation-duration: 0.5s;
         animation-direction: alternate;
@@ -144,54 +126,32 @@ footer {
 .selected:focus {
     animation-play-state: paused !important;
 }
-
 /* I can't use this on images, because it also alters the color of it, as well as the text. */
 .rainbowBorder:hover {
     /* on hover the transparent border becomes apparent */
     position:relative;
 
-    /* Commented stuff out durring development... */
-
-    /* border: 10px solid; */
-    /* this manipulates the border image to be a gradient */
-    /* border-image: linear-gradient(45deg, gold, deeppink) 1; */
-    /* clip-path cuts the image so that only the cliped inside is shown and not the outside -this gives it the round edges*/
-    /* inset defines an inset rectangle*/
-    /* clip-path: inset(0px round 10px); */
     /* huerotate make the hue rotate and change around the border for 6 seconds, in an infinite loop, linearly */
     animation: huerotate 6s infinite linear;
-    /* this applies the hue rotation to the  */
+    /* this applies the hue rotation */
     filter: hue-rotate(360deg);
-
-    /* added this so there's a little glow inside the box, barely noticeable */
-    /* box-shadow:inset 0px 0px 90px 1px #004D39; */
 }
-
 .card:hover {
     position: relative;
     right:3px;
     top:3px;
-    /* transform:rotate(-1deg); */
     box-shadow:3px -3px 5px 3px #EF0D50;
-    /* animation-direction: alternate; */
     animation-name:rotate;
     animation-duration: 0.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
-/* .rainbowBorderBig:hover {
-
-} */
 .card-body a {
     color:#FF9DA4;
 }
-
-
 footer {
     background-color: #747F8C;
 }
-
-/* animates the rotation of the filter */
 @keyframes huerotate {
     0% {
         filter: hue-rotate(0deg);
