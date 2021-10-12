@@ -4,6 +4,7 @@ const lButt = document.getElementById("actualLandingButton");
 
 const everything = document.getElementById("everything");
 const landingContainer = document.getElementById("landingContainer");
+const blackNav = document.getElementById("blackVacuum");
 
 const getLinks = document.getElementById("getLinks");
 const emailLink = document.getElementById("emailLink").children[0]
@@ -34,16 +35,36 @@ function watch() {
         var timer = " 0px 0px " + i + "px " + i + "px #000000";
         document.getElementById("landingButton").style.boxShadow = timer;
 
-        if (i >= 900) {
+        if (i >= 990) {
 
-            landingContainer.setAttribute("style", "display:none");
+            blackTransition() 
+
             everything.setAttribute("style", "display:block");
 
+            landingContainer.setAttribute("style", "display:none");
             clearInterval(clock);
         }
+    }, 1);
+}
+
+
+function blackTransition() {
+    var z = 1400;
+    var blackVanish = setInterval(function () {
+
+        z -=4;
+        var transition = "0px 0px " + z + "px " + z + "px #000000";
+        blackNav.style.boxShadow = transition;
+
+        if (z <= 4) {
+            clearInterval(blackVanish);
+        }
+
 
     }, 1);
 }
+
+
 eButt.addEventListener("click", email);
 cButt.addEventListener("click", phone);
 lButt.addEventListener("click", enter)
